@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1920px 1080px;
+  background-blend-mode: darken;
+}
+.navbar {
+  position: fixed;
+}
+.navbar li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar li a {
+  text-decoration: none;
+  position: relative;
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+  font-family: sans-serif;
+  display: block;
+  overflow: hidden;
+  transition: 0.7s all;
+  padding: 14px 20px;
+}
+.navbar li a:before {
+  content: "";
+  width: 50px;
+  position: absolute;
+  border-bottom: 2px solid white;
+  bottom: 0;
+  right: 500px;
+  transition: 0.7s all;
+}
+.navbar li a:hover:before {
+  right: 0;
+}
